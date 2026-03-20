@@ -34,5 +34,5 @@
 Clone the repository and place the script somewhere on your `$env:PATH` (or reference it by path).
 
 ```powershell
-git clone https://github.com/<org-or-user>/TruLaL.git
+git clone https://github.com/nachszon/TruLaL.git
 cd TruLaL
