@@ -46,5 +46,5 @@ All examples use the safe, fictional sample user pussinboots.
 You may run the script via its relative or absolute path.
 
 ```powershell
-powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\TrullAD.ps1 -User pusspussinboots
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\TrullAD.ps1 -User <pusspussinboots>
 ```
