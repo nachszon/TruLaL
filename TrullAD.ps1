@@ -61,7 +61,7 @@ $rows = foreach ($dc in $DCs) {
         $u = Get-ADUser -Server $dc -Identity $User -Properties LastLogon
         [pscustomobject]@{
             DC        = $dc
-            LastLogon = if ($u.LastLogon -and $u.LastLogon -ne 0) { [datetime]::FromFileTime($u.LastLogon) } else { $null }
+            LastLogon = if ($u.LastLogon -and $u.LastLogon -gt 0) { [datetime]::FromFileTime($u.LastLogon) } else { "Never" }
         }
     }
     catch {
